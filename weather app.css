@@ -1,0 +1,73 @@
+:root {
+  --bg-color: rgb(255, 255, 255);
+  --text-color: black;
+  --input-bg: #f0f0f0;
+  --button-bg: #007bff;
+  --button-hover: #0056b3;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --input-bg: #1e1e1e;
+  --button-bg: #4444ff;
+  --button-hover: #2222aa;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+h1{
+  color: rgb(255, 157, 0);
+}
+.container {
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 320px;
+  transition: background 0.3s;
+}
+
+input {
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+#error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+.hide {
+  display: none;
+}
