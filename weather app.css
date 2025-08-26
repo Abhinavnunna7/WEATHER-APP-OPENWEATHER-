@@ -12,7 +12,7 @@ body.dark {
   --input-bg: #1e1e1e;
   --button-bg: #4444ff;
   --button-hover: #2222aa;
-  --box-shadow: white;
+  --box-shadow: rgb(255, 255, 255);
 }
 
 body {
